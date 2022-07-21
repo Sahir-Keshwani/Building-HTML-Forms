@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building HTML Form</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Add user</legend>
+
+        <div>
+          <label for="firstName">First name</label>
+          <input type="text" name="firstName" id="firstName" />
+        </div>
+
+        <div>
+          <label for="lastName">Last name</label>
+          <input type="text" name="lastName" id="lastName" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="guest">Guest</option>
+          </select>
+        </div>
+
+        <div>
+          <p>Choose your favorite programming language:</p>
+
+          <label for="html">HTML</label>
+          <input type="radio" name="html" id="html" />
+
+          <label for="css">CSS</label>
+          <input type="radio" name="css" id="css" />
+
+          <label for="javascript">Javascript</label>
+          <input type="radio" name="javascript" id="javascript" />
+        </div>
+
+        <div>
+          <label for="comments">Comments</label>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="currentDate">Current Date</label>
+          <input type="date" name="currentDate" id="currentDate" />
+        </div>
+
+        <div>
+          <label for="newsletter">Sign up for newsletter</label>
+          <input type="checkbox" name="newsletter" id="newsletter" />
+
+          <label for="t&c">Agree to terms and conditions</label>
+          <input type="checkbox" name="t&c" id="t&c" />
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
